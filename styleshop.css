@@ -1,0 +1,49 @@
+ body{
+        width: 100%;
+        margin: 0; 
+        padding: 0;
+        
+        font-family: 'Comic Sans MS';
+        
+      }
+      header {
+        height: 110px;
+        background: linear-gradient(to right, rgb(130, 55, 184), rgb(204, 164, 219)); 
+        width: 100%;
+      font-size: 13px;
+     }
+     header .lototag .tag1 nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    header .lototag .tag1 nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.1s ease;
+      margin-left: 8px;
+    }
+     
+
+
+header .lototag .tag1 nav ul li a:hover{
+  color: black;
+  padding :2px;
+  border-radius: 100%;
+  background: linear-gradient(to right, rgb(226, 206, 89), rgb(233, 232, 158));
+  
+}
+header .lototag .tag1 nav ul li a.active{
+  color: black;
+  border-radius: 100%;
+  background: linear-gradient(to right, rgb(226, 206, 89), rgb(233, 232, 158));
+  
+}
+    header .lototag .logo{
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    header .lototag{
+        display: flex;
+        justify-content: space-between;
+    }

@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styleshop.css">
+   <style>
+       .sh{
+        height: 500px;
+        background: linear-gradient(to right, rgb(130, 55, 184), rgb(204, 164, 219)); 
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .box {
+      background-color: rgb(213, 137, 236);
+      padding: 10px 10px 10px 10px;
+      width: 200px; 
+      border-radius: 10px; 
+    }
+    .box:hover{
+      background-color: rgb(213, 137, 236);
+      padding: 10px 10px 10px 10px;
+      width: 220px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      border-radius: 10px; 
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; 
+      overflow: hidden;
+      margin: 0 auto 10px; 
+      border: 1px solid;
+     
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+
+
+    .image {
+      margin-top: 10px;
+    }
+
+    .image img {
+      width: 110px;
+      height: 130px;
+      display: block;
+      margin: 0 auto; 
+    }
+    .obox{
+        
+        margin-top: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+        
+        border-radius: 10px;
+        border-color: rgb(201, 171, 230);
+        background: linear-gradient(to right, rgb(215, 160, 255), rgb(192, 136, 212));
+        border: 2px solid rgb(213, 198, 228);
+
+    }
+    .inne{
+        margin-left: 100px;
+        margin-right:100px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .box1 {
+      background-color: rgb(213, 137, 236);
+      padding: 10px 10px 10px 10px;
+      width: 210px; 
+      border-radius: 10px; 
+    }
+    .box1:hover{
+      background-color: rgb(213, 137, 236);
+      padding: 10px 10px 10px 10px;
+      width: 220px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      border-radius: 10px; 
+    }
+    .image1 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .image1 img {
+      width: 150px;
+      height: 200px;
+      display: block;
+      margin: 0 auto; 
+    }
+    .obox1{
+        
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        border-radius: 10px;
+       /* border-color: rgb(201, 171, 230);
+        background: linear-gradient(to right, rgb(214, 185, 235), rgb(182, 146, 196));
+        border: 2px solid rgb(213, 198, 228);*/
+
+    }
+    .inne1{
+        margin-left: 150px;
+        margin-right:150px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .l{
+                display: flex;
+                justify-content: space-around;
+            }
+            .para1{
+                align-items: justify;
+            }
+            .wh1{
+                padding: 0;
+                margin: 0;
+            }
+            .fimag{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+            }
+            .listf{
+                display: flex;
+                justify-content: space-between;
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+            .flist{
+                margin-left: 0px;
+                margin-right: 0px;
+                border-color: rgb(201, 166, 233);
+                background: linear-gradient(to right, rgb(197, 167, 219), rgb(187, 148, 201));
+                margin-top: 75px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            .copf{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: rgb(162, 85, 235);
+                color: white;
+            }
+            .ima{
+                display: flex;
+                justify-content: space-between;
+           }
+               .content {
+      text-align: center;
+      color: white; 
+    }
+           .content1 {
+      display: none;
+    }
+    #home {
+      display: block;
+    }
+                 .tab {
+      cursor: pointer;
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .tab.active {
+      background-color: #ddd;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+    .tabs-container{
+      display: flex;
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+        .ima{
+                display: flex;
+                justify-content: space-between;
+           }
+           .consho{
+            display: flex;
+            justify-content: space-between;
+           }
+   .obox001{
+        
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+        border-radius: 10px;
+        border-color: rgb(201, 171, 230);
+        background: linear-gradient(to right, rgb(217, 184, 240), rgb(224, 166, 245));
+        border: 2px solid rgb(213, 198, 228);
+
+    }
+    .inne001{
+        margin-left: 25px;
+        margin-right:25px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+                 .resiof{
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                background: linear-gradient(to right,rgb(180, 121, 223), rgb(220, 171, 238));
+                border-color: rgb(155, 74, 231);
+                border-radius: 10px;
+             }
+
+     /* .c1{
+        height: 50px;
+        background-color: black;
+        margin: 0; 
+        padding: 0; 
+      }*/
+    </style>
+</head>
+
+<body>
+<header>
+   <div class="lototag">
+    <div class="logo">
+      <img src="Homepageimages/iso.png" alt="Logo" width="200px" height="75px">
+    </div>
+    <div class="tag1">
+    <nav style="margin-top: 50px;">
+      <ul>
+        <li><a href="#home" class="active" style="padding: 20px;">Home</a></li>
+        <li><a href="#about" style="padding: 20px;">About</a></li>
+        <li><a href="#shopping"style="padding: 20px;">Shopping</a></li>
+        <li><a href="#contact" style="padding: 20px;">Contact Us</a></li>
+        <li><a href="#form" style="padding: 20px;
+                                      margin-right: 25px;">Sign in/Regsitration</a></li>
+      </ul>
+    </nav>
+    </div>
+   </div>
+</header>
+
+<div id="home" class="content1">
+  <div class="sh">
+    <div class="con">
+      <p style="color: rgb(188, 225, 240); font-size: 40px;margin-left: 25px;margin-top:100px; width: 600px;"><b>Explore every on the shop</b></p><br>
+      <p style="color: rgb(188, 225, 240); font-size: 17px;margin-top:5px;margin-left: 25px;width: 500px;height: 100px;" align="justify"><b>An online shopping website is a marketplace for desires and finds. Shop with ease, from home to anyware, on the web's vast bazaar. A virtual emporium, where desires soar, be caution,lest you spend more.</b></p><br>
+      <input type="email" name="email" placeholder="Search some shopping things..." style="height: 30px;width:275px;margin-left: 25px;border-radius: 50px; "> <input type="button" name="Search" value="Search" class="submit" style="height: 37px;width: 80px;border-radius: 50px;">
+    </div>
+    <div class="ima">
+      <div style="display: block;">
+        <img src="Homepageimages/o.png" style="width: 350px;height: 250px;margin-left:0px;">
+        <img src="Homepageimages/bagnew.png" style="width: 300px;height: 200px;margin-left:75px;margin-top: 45px;">
+      </div>
+      <div>
+       <img src="Homepageimages/g.png" style="padding: 0; width: 300px;height: 500px;margin-right: 25px;">
+      </div>
+    </div>
+  </div>
+
+<center><p style="color: rgb(186, 142, 228);font-size: 30px;margin-top:30px;">Customer Features</p></center>
+<div class="obox">
+    <div class="inne">
+  <div class="box">
+    <div class="avatar">
+
+      <img src="Homepageimages/return.jpg" alt="Avatar">
+    </div>
+    <div class="image">
+
+      <img src="Homepageimages/shart.jpg" alt="Image Description">
+    </div>
+    <div class="content">
+      <h2>Return</h2>
+      <p>Any products return in 10 days</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="avatar">
+
+      <img src="Homepageimages/pure.jpg" alt="Avatar">
+    </div>
+    <div class="image">
+
+      <img src="Homepageimages/purec.jpg" alt="Image Description">
+    </div>
+    <div class="content">
+      <h2>Pure Cotton</h2>
+      <p>Dress are very Pure Cotton</p>
+    </div>
+  </div><div class="box">
+    <div class="avatar">
+
+      <img src="Homepageimages/cheap.jpg" alt="Avatar">
+    </div>
+    <div class="image">
+
+      <img src="Homepageimages/cheapd.jpg" alt="Image Description">
+    </div>
+    <div class="content">
+      <h2>Cheap</h2>
+      <p>Dress are very Cheap</p>
+    </div>
+  </div><div class="box">
+    <div class="avatar">
+
+      <img src="Homepageimages/gift.jpg" alt="Avatar">
+    </div>
+    <div class="image">
+
+      <img src="Homepageimages/gift1page.jpg" alt="Image Description">
+    </div>
+    <div class="content">
+      <h2>Gift</h2>
+      <p>Gift for purchasing All products</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<center><p style="color: rgb(186, 142, 228);font-size: 30px;margin-top: 60px;">Great Deals Shopping best offers for shopping</p></center>
+<div class="obox1">
+    <div class="inne1">
+  <div class="box1">
+    <div class="image1">
+
+      <img src="Homepageimages/offer1.jpg" alt="Image Description">
+    </div>
+  </div>
+  <div class="box1">
+    <div class="image1">
+
+      <img src="Homepageimages/offer21.jpg" alt="Image Description">
+    </div>
+  </div><div class="box1">
+    <div class="image1">
+      <img src="Homepageimages/offer3.jpg" alt="Image Description">
+    </div>
+  </div>
+</div>
+</div>
+<div style="margin-top: 60px;">
+    <div class="wh1">
+      <div class="l">
+        <div class="para1">
+          <p style="color: rgb(186, 142, 228);font-size: 26px; padding: 0;margin: 0;">What is online shopping ?</p>
+          <p align="justify" style="width: 300px; height: 100px;color: black;" >Online shopping or e-shopping is searching for and purchasing goods and services over the internet through use of a web browser.</p>
+        </div>
+        <div class="video">
+          <video width=300px height=100px controls autoplay loop=100>
+            <source src="Homepageimages/video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="fimag">
+  <div>
+      <img src="Homepageimages/imf.jpeg" alt="Image" width="250px" height="250px" style="margin-left: 200px;">
+      
+  </div>
+  <div>
+      <p style="color: rgb(186, 142, 228);font-size: 26px; margin-right: 200px;padding: 0; margin: 0;width: 300px">why the online shopping is best?</p>
+<p align="justify" style="width: 300px; height: 100px;margin-right: 200px; color: black;">Customer can purchase items from the comfort of their own home or workspace.
+Shopping is made easier and convenient for the customer through the internet. It is also easy to cancel the transactions. Save the time and efforts.</p>
+  </div>
+</div>
+<div class="fimag">
+  <div>
+    <p style="color: rgb(186, 142, 228);font-size: 26px; margin-left: 200px;padding: 0;width: 500px; ">How the customers are earn the online shopping ?</p>
+    <p align="justify" style="margin-left: 200px;width: 500px; height: 100px;margin-bottom: 50px;color: black;">Cashback and Rewards Programs: Many online retailers offer cashback or rewards programs, where customers can earn a percentage of their purchase value as cashback or points. These rewards can be redeemed for discounts or future purchases.
+      Referral Programs: Some online stores have referral programs where customers can earn credits or discounts by referring friends or family members to the website or app.
+      Loyalty Programs: Online retailers may have loyalty programs that reward repeat customers with exclusive discounts, early access to sales, or special offers.</p>
+  </div>
+  <div>
+    <img src="Homepageimages/con32.jpg" alt="Image" width="350px" height="250px" style="margin-right: 200px;margin-top: 60px;">
+  </div>
+</div>
+</div>
+
+<div id="about" class="content1">
+  
+  <center> <p style="color: rgb(207, 138, 235);font-size: 75px;padding: 0;margin: 0;margin-top: 25px;"><b>About Us</b></p></center>
+  <div class="imofab">
+  <p align="justify" style="margin-right: 200px;margin-left: 200px;margin-top: 50px;">Welcome to Shop Gold, your one-stop online shopping destination! At Shop Gold, we are committed to providing you with an exceptional shopping experience, offering a wide range of high-quality products at unbeatable prices. Our goal is to make your online shopping journey effortless, enjoyable, and memorable.</p>
+  <p  style="margin-left: 200px;color: rgb(195, 124, 209);margin-top: 50px;font-size: 25px;"><b>Our Story</b></p>
+  <p align="justify" style="margin-left: 200px;margin-right: 200px;">Shop Gold was founded with a simple yet powerful vision - to revolutionize the way people shop online. Our team of passionate entrepreneurs and tech enthusiasts came together with the shared belief that online shopping should be convenient, reliable, and personalized. We started this venture with a mission to connect customers with the best products from around the world, while providing top-notch customer service.</p>
+  <p  style="margin-left: 200px;color: rgb(195, 124, 209);margin-top: 50px;font-size: 25px;"><b>Why Choose Us?</b></p>
+  <p align="justify" style="margin-left: 200px;margin-right: 200px;"><b>Extensive Product Selection:</b> We take pride in curating a vast collection of products across various categories, ensuring you find everything you need under one virtual roof.<br><br><b>Extensive Product Selection:</b> We take pride in curating a vast collection of products across various categories, ensuring you find everything you need under one virtual roof.
+   Unbeatable Prices: We understand the importance of value for money. That's why we strive to offer competitive prices without compromising on quality.    
+   <br><br><b>Secure and Seamless Shopping:</b>Your security is our priority. We use state-of-the-art encryption technology to protect your personal information, and our user-friendly interface ensures a smooth shopping experience.   
+   <br><br><b>Fast and Reliable Delivery:</b> With our efficient logistics partners, we aim to get your purchases to your doorstep as quickly and reliably as possible.   
+   <br><br><b>Customer-Centric Approach:</b> We believe in building long-lasting relationships with our customers. Our dedicated support team is always ready to assist you with any queries or concerns.</p>
+
+
+<div class="fimag">
+ <div>
+     <img src="Homepageimages/ourvision.jpg" alt="Image" width="300px" height="200px" style="margin-left: 200px;">
+     
+ </div>
+ <div>
+     <p style="color: rgb(186, 142, 228);font-size: 26px; margin-right: 200px;padding: 0; margin: 0;width: 300px">OUR VISION</p>
+     <p align="justify" style="width: 400px; height: 100px;margin-right: 200px;">To be the leading online shopping platform globally, providing customers with a seamless and personalized shopping experience, while fostering a community of satisfied shoppers and trusted sellers.</p>
+ </div>
+</div>
+<div class="fimag">
+ <div>
+   <p style="color: rgb(186, 142, 228);font-size: 26px; margin-left: 200px;padding: 0;width: 500px; ">OUR MISSION</p>
+   <p align="justify" style="margin-left: 200px;width: 500px; height: 350px;margin-bottom: 50px;">
+       <b>Customer Satisfaction:</b> We are committed to exceeding customer expectations by offering an unparalleled selection of products, exceptional service, and hassle-free shopping.<br><br>
+       <b>Innovation and Technology:</b> We continuously explore cutting-edge technologies to enhance our platform, ensuring an effortless and enjoyable shopping journey.<br><br>
+       <b>Empowering Sellers:</b> We aim to empower sellers, whether established brands or emerging entrepreneurs, by providing a robust and supportive marketplace to showcase their products.<br><br>
+       <b>Sustainability:</b> We believe in responsible business practices and strive to incorporate sustainability initiatives in our operations and product offerings.<br><br>      
+       <b>Community Engagement:</b> We endeavor to build a vibrant and engaged community of shoppers and sellers, fostering connections and shared experiences.</p>
+ </div>
+ <div>
+   <img src="Homepageimages/ourmission.jpg" alt="Image" width="350px" height="250px" style="margin-right: 200px;margin-top: 100px;">
+ </div>
+</div>
+</div>
+<br><br><br><p style="margin-left: 200px;margin-right: 200px;margin-bottom: 100px;"align="justify">Thank you for choosing Shop Gold. We look forward to serving you and being a part of your incredible shopping journey! Happy shopping!
+  </p>
+</div>
+
+<div id="shopping" class="content1">
+
+    <p style="color: rgb(207, 138, 235);font-size: 20px;padding: 0;margin: 0;margin-top: 25px;margin-left: 50px;"><b>Shop Immediatly !!!</b></p>
+    <p  style="color: rgb(195, 124, 209);font-size: 20px;padding: 0;margin: 0;margin-left: 50px;margin-top: 20px;"><b>Search Something</b></p>
+    <input type="text" placeholder="Enter your dress name" id="phone" style="width: 300px;height: 25px;border-top:none;border-left: none;border-right: none;margin-left: 50px;margin-top: 20px;"><input type ="submit" value="Search" style="margin-left: 50px;cursor: pointer;width: 100px;height: 40px;border-radius: 50%;background: linear-gradient(to right,rgb(198, 144, 235), rgb(229, 178, 248));">
+
+    <p  style="color: rgb(195, 124, 209);font-size: 20px;padding: 0;margin: 0;margin-left: 50px;margin-top: 20px;"><b>Filters</b></p>
+
+    <div class="tabs-container">
+        <div class="tab active" id="tab1">All</div>
+        <div class="tab" id="tab2">Boy Kids</div>
+        <div class="tab" id="tab3">Girl Kids</div>
+        <div class="tab" id="tab4">Youth boys</div>
+        <div class="tab" id="tab5">Youth girls</div>
+        
+    </div>
+
+   <div class="tab-content active" id="content1">
+    <div class="obox001">
+        <div class="inne001">
+      <div class="box">
+        <div class="image">
+          <img src="kids boy/IMG-20230806-WA0030.jpg" alt="Image Description">
+        </div>
+        <div class="content">
+          <p>Boy shirt and pand for kids</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="kids boy/IMG-20230806-WA0035.jpg" alt="Image Description">
+        </div>
+        <div class="content">
+          <p>Boy shirt and pand for kids</p>
+        </div>
+      </div><div class="box">
+        <div class="image">
+          <img src="kids boy/IMG-20230806-WA0036.jpg" alt="Image Description">
+        </div>
+        <div class="content">
+          <p>Boy shirt and pand for kids</p>
+        </div>
+      </div><div class="box">
+        <div class="image">   
+          <img src="kids boy/IMG-20230806-WA0038.jpg" alt="Image Description">
+        </div>
+        <div class="content">
+          <p>Boy shirt and pand for kids</p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">   
+          <img src="kids boy/XRecorder_06082023_235721.jpg" alt="Image Description">
+        </div>
+        <div class="content">
+          <p>Boy shirt and pand for kids</p>
+        </div>
+      </div>
+      </div>
+
+
+      <div class="inne001">
+        <div class="box">
+          <div class="image">
+            <img src="kids girls/IMG-20230806-WA0029.jpg" alt="Image Description">
+          </div>
+          <div class="content">
+            <p>Kids dress for girls</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="kids girls/IMG-20230806-WA0032.jpg" alt="Image Description">
+          </div>
+          <div class="content">
+            <p>Kids dress for girls</p>
+          </div>
+        </div><div class="box">
+          <div class="image">
+            <img src="kids girls/IMG-20230806-WA0033.jpg" alt="Image Description">
+          </div>
+          <div class="content">
+            <p>Kids dress for girls</p>
+          </div>
+        </div><div class="box">
+          <div class="image">   
+            <img src="kids girls/IMG-20230806-WA0034.jpg" alt="Image Description">
+          </div>
+          <div class="content">
+            <p>Kids dress for girls</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">   
+            <img src="kids girls/IMG-20230806-WA0037.jpg" alt="Image Description">
+          </div>
+          <div class="content">
+            <p>Kids dress for girls</p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="inne001">
+            <div class="box">
+              <div class="image">
+                <img src="youth boys/IMG-20230806-WA0019.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men Shirt</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="image">
+                <img src="youth boys/IMG-20230806-WA0021.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men shirt</p>
+              </div>
+            </div><div class="box">
+              <div class="image">
+                <img src="youth boys/IMG-20230806-WA0025.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men Shirt</p>
+              </div>
+            </div><div class="box">
+              <div class="image">   
+                <img src="youth boys/XRecorder_06082023_234522.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men Shirt</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="image">   
+                <img src="youth boys/XRecorder_06082023_234556.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men Shirt</p>
+              </div>
+            </div>
+            </div>
+
+
+            <div class="inne001">
+                <div class="box">
+                  <div class="image">
+                    <img src="youth boys/XRecorder_06082023_234621.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Men Shirt</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="image">
+                    <img src="youth boys/XRecorder_06082023_234643.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Men Shirt</p>
+                  </div>
+                </div><div class="box">
+                  <div class="image">
+                    <img src="youth boys/XRecorder_06082023_234733.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Men Shirt</p>
+                  </div>
+                </div><div class="box">
+                  <div class="image">   
+                    <img src="youth boys/XRecorder_06082023_234836.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Men Shirt</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="image">   
+                    <img src="youth girls/IMG-20230806-WA0020.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Women Dress</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="inne001">
+                  <div class="box">
+                    <div class="image">
+                      <img src="youth girls/IMG-20230806-WA0022.jpg" alt="Image Description">
+                    </div>
+                    <div class="content">
+                      <p>Womne Dress</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="image">
+                      <img src="youth girls/IMG-20230806-WA0023.jpg" alt="Image Description">
+                    </div>
+                    <div class="content">
+                      <p>Womne Dress</p>
+                    </div>
+                  </div><div class="box">
+                    <div class="image">
+                      <img src="youth girls/IMG-20230806-WA0024.jpg" alt="Image Description">
+                    </div>
+                    <div class="content">
+                      <p>Womne Dress</p>
+                    </div>
+                  </div><div class="box">
+                    <div class="image">   
+                      <img src="youth girls/IMG-20230806-WA0026.jpg" alt="Image Description">
+                    </div>
+                    <div class="content">
+                      <p>Womne Dress</p>
+                    </div>
+                  </div>
+                  <div class="box">
+                    <div class="image">   
+                     <img src="youth girls/IMG-20230806-WA0027.jpg" alt="Image Description">
+                    </div>
+                    <div class="content">
+                      <p>Womne Dress</p>
+                   </div>
+                  </div>
+                  </div>
+                  
+                  
+                
+        </div>
+    </div>
+
+      <div class="tab-content active" id="content2">
+        <div class="obox001">
+          <div class="inne001">
+            <div class="box">
+              <div class="image">
+                <img src="kids boy/IMG-20230806-WA0030.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Boy shirt and pand for kids</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="image">
+                <img src="kids boy/IMG-20230806-WA0035.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Boy shirt and pand for kids</p>
+              </div>
+            </div><div class="box">
+              <div class="image">
+                <img src="kids boy/IMG-20230806-WA0036.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Boy shirt and pand for kids</p>
+              </div>
+            </div><div class="box">
+              <div class="image">   
+                <img src="kids boy/IMG-20230806-WA0038.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Boy shirt and pand for kids</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="image">   
+                <img src="kids boy/XRecorder_06082023_235721.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Boy shirt and pand for kids</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="tab-content active" id="content3">
+        <div class="obox001">
+            <div class="inne001">
+              <div class="box">
+                <div class="image">
+                  <img src="kids girls/IMG-20230806-WA0029.jpg" alt="Image Description">
+                </div>
+                <div class="content">
+                  <p>Kids dress for girls</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="image">
+                  <img src="kids girls/IMG-20230806-WA0032.jpg" alt="Image Description">
+                </div>
+                <div class="content">
+                  <p>Kids dress for girls</p>
+                </div>
+              </div><div class="box">
+                <div class="image">
+                  <img src="kids girls/IMG-20230806-WA0033.jpg" alt="Image Description">
+                </div>
+                <div class="content">
+                  <p>Kids dress for girls</p>
+                </div>
+              </div><div class="box">
+                <div class="image">   
+                  <img src="kids girls/IMG-20230806-WA0034.jpg" alt="Image Description">
+                </div>
+                <div class="content">
+                  <p>Kids dress for girls</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="image">   
+                  <img src="kids girls/IMG-20230806-WA0037.jpg" alt="Image Description">
+                </div>
+                <div class="content">
+                  <p>Kids dress for girls</p>
+                </div>
+              </div>
+          </div>
+</div>
+</div>
+    <div class="tab-content active" id="content4">
+        <div class="obox001">
+          <div class="inne001">
+            <div class="box">
+              <div class="image">
+                <img src="youth boys/IMG-20230806-WA0019.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men Shirt</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="image">
+                <img src="youth boys/IMG-20230806-WA0021.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men shirt</p>
+              </div>
+            </div><div class="box">
+              <div class="image">
+                <img src="youth boys/IMG-20230806-WA0025.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men Shirt</p>
+              </div>
+            </div><div class="box">
+              <div class="image">   
+                <img src="youth boys/XRecorder_06082023_234522.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men Shirt</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="image">   
+                <img src="youth boys/XRecorder_06082023_234556.jpg" alt="Image Description">
+              </div>
+              <div class="content">
+                <p>Men Shirt</p>
+              </div>
+            </div>
+            </div>
+
+
+            <div class="inne001">
+                <div class="box">
+                  <div class="image">
+                    <img src="youth boys/XRecorder_06082023_234621.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Men Shirt</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="image">
+                    <img src="youth boys/XRecorder_06082023_234643.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Men Shirt</p>
+                  </div>
+                </div><div class="box">
+                  <div class="image">
+                    <img src="youth boys/XRecorder_06082023_234733.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Men Shirt</p>
+                  </div>
+                </div><div class="box">
+                  <div class="image">   
+                    <img src="youth boys/XRecorder_06082023_234836.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Men Shirt</p>
+                  </div>
+                </div>
+          </div>
+    </div>
+    </div>
+    <div class="tab-content active" id="content5">
+        <div class="obox001">
+            <div class="inne001">
+              <div class="box">
+                <div class="image">   
+                  <img src="youth girls/IMG-20230806-WA0020.jpg" alt="Image Description">
+                </div>
+                <div class="content">
+                  <p>Women Dress</p>
+                </div>
+              </div>
+                <div class="box">
+                  <div class="image">
+                    <img src="youth girls/IMG-20230806-WA0022.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Womne Dress</p>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="image">
+                    <img src="youth girls/IMG-20230806-WA0023.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Womne Dress</p>
+                  </div>
+                </div><div class="box">
+                  <div class="image">
+                    <img src="youth girls/IMG-20230806-WA0024.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Womne Dress</p>
+                  </div>
+                </div><div class="box">
+                  <div class="image">   
+                    <img src="youth girls/IMG-20230806-WA0026.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Womne Dress</p>
+                  </div>
+                </div>
+                </div>
+                <div class="inne001">
+                <div class="box">
+                  <div class="image">   
+                   <img src="youth girls/IMG-20230806-WA0027.jpg" alt="Image Description">
+                  </div>
+                  <div class="content">
+                    <p>Womne Dress</p>
+                 </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabs = document.querySelectorAll('.tab');
+      const tabContents = document.querySelectorAll('.tab-content');
+
+      function showTab(tabIndex) {
+        tabs.forEach((tab) => tab.classList.remove('active'));
+        tabContents.forEach((content) => content.classList.remove('active'));
+
+        tabs[tabIndex].classList.add('active');
+        tabContents[tabIndex].classList.add('active');
+      }
+
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => showTab(index));
+      });
+
+      const defaultTabIndex = 0;
+      showTab(defaultTabIndex);
+    });
+  </script>
+</div>
+
+<div id="contact" class="content1">
+
+    <p style="color: rgb(207, 138, 235);font-size: 40px;padding: 0;margin: 0;margin-top: 25px;margin-left: 200px;"><b>Contact As</b></p>
+<div class="consho">
+    <div>
+    <p  style="color: rgb(195, 124, 209);font-size: 20px;padding: 0;margin: 0;margin-left: 200px;margin-top: 50px;"><b>"We'd Love to Hear From You!"</b></p>
+    <p  style="margin-left: 200px;color: rgb(195, 124, 209);margin-top: 20px;font-size: 20px;padding: 0;"><b>Customer Support</b></p>
+   <p align="justify" style="margin-right: 200px;margin-left: 200px;margin-top: 20px;width: 500px;height: 100px;">Our dedicated customer support team is here to assist you with any questions, concerns, or feedback you may have. We strive to provide the best shopping experience possible, and your satisfaction is our top priority.</p>
+   <p  style="margin-left: 200px;color: rgb(195, 124, 209);margin-top: 40px;font-size: 20px;"><b>Contact Information</b></p>
+   <p align="justify" style="margin-right: 200px;margin-left: 200px;margin-top: 20px;">
+    <b>Customer Support Representative:</b> MAHESHKUMAR M<br>
+    <b>Email:</b> maheshkumarm001234@gmail.com<br>
+    <b>Phone:</b> 9360295163
+   </p>
+   <p align="justify" style="margin-left: 200px;color: rgb(195, 124, 209);margin-top: 20px;font-size: 20px;padding: 0;"><b>Schedule Time</b></p>
+     <table style="margin-left: 200px;">
+       <thead>
+          <tr>
+            <th></th>
+            <th width="150px">Start Time</th>
+            <th>End Time</th>
+          </tr>
+       </thead>
+       <tbody>
+          <tr>
+             <th>Monday</th>
+             <td><p style="margin-left:30px;padding:0;margin:0;">9:00 AM</p></td>
+             <td>5:00 PM</td>
+          </tr>
+
+          <tr>
+             <th>Tuesday</th>
+             <td><p style="margin-left:30px;padding:0;margin:0;">9:00 AM</p></td>
+             <td>5:00 PM</td>
+          </tr>
+
+          <tr>
+             <th>Wednesday</th>
+             <td><p style="margin-left:30px;padding:0;margin:0;">9:00 AM</p></td>
+             <td>5:00 PM</td>
+          </tr>
+
+          <tr>
+             <th>Thursday</th>
+             <td><p style="margin-left:30px;padding:0;margin:0;">9:00 AM</p></td>
+             <td>5:00 PM</td>
+          </tr>
+
+          <tr>
+             <th>Fridayday</th>
+             <td><p style="margin-left:30px;padding:0;margin:0;">9:00 AM</p></td>
+             <td>4:30 PM</td>
+          </tr>
+
+          <tr>
+             <th>Saturday</th>
+             <td><p style="margin-left:30px;padding:0;margin:0;">9:00 AM</p></td>
+             <td>5:00 PM</td>
+          </tr>
+      </tbody>
+    </table>
+   </div>
+   <div style="margin-right: 200px;">
+    <p  style="color: rgb(195, 124, 209);margin-top: 20px;font-size: 20px;padding: 0;"><b>Contact for if any query</b></p>
+    <label for="name" style="color: rgb(195, 124, 209);font-size: 20px;">Name</label><br>
+    <input type="text" placeholder="Enter Your Name" id="name" style="width: 300px; height: 25px;border-top:none;border-left: none;border-right: none;"><br><br>
+    <label for="email" style="color: rgb(195, 124, 209);font-size: 20px;">Email</label><br>
+    <input type="email" placeholder="Enter your Email address" id="email" style="width: 300px;height: 25px;border-top:none;border-left: none;border-right: none;"><br><br>
+    <label for="message" style="color: rgb(195, 124, 209);font-size: 20px;">Message</label><br>
+    <textarea rows="5" cols="39" style="border-top:none;border-left: none;border-right: none;" placeholder="Enter your Query"></textarea><br>
+    <br><input type ="submit" value="Submit" style="cursor: pointer;width: 100px;height: 50px;border-radius: 50%;background: linear-gradient(to right,rgb(189, 155, 212), rgb(165, 108, 185));">
+    <p  style="color: rgb(195, 124, 209);margin-top: 40px;font-size: 20px;padding: 0;"><b>Address</b></p>
+    <p>
+    Shop Gold,<br>
+    1600 Pennsylvania Avenue NW,<br>
+    Washington, DC 20500, United States.<br>
+    </p>
+   </div>
+</div>
+
+</div>
+
+<div id="form" class="content1">
+
+     <div class="resiof">
+     <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-6">
+                <h1 class="mb-4">Registration Form</h1>
+        <form action="/submit_registration" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="age" class="form-label">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="address" class="form-label">Address:</label>
+                <textarea class="form-control" id="address" name="address" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Gender:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="male" name="gender" value="male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="female" name="gender" value="female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="other" name="gender" value="other">
+                    <label class="form-check-label" for="other">Other</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Hobbies:</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="reading" name="hobbies[]" value="reading">
+                    <label class="form-check-label" for="reading">Reading</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="traveling" name="hobbies[]" value="traveling">
+                    <label class="form-check-label" for="traveling">Traveling</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="cooking" name="hobbies[]" value="cooking">
+                    <label class="form-check-label" for="cooking">Cooking</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="country" class="form-label">Country:</label>
+                <select class="form-control" id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="profilePicture" class="form-label">Profile Picture:</label>
+                <input type="file" class="form-control" id="profilePicture" name="profilePicture" accept="image/*">
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img src="Homepageimages/registrationj.png" alt="Registration Picture" style="max-width: 100%;">
+    </div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="flist">
+  <div class="listf">
+      <div>
+          <img src="Homepageimages/iso.png" alt="logo" style="margin-top: 20px; width: 200px;height: 75px;">
+
+      </div>
+      <div>
+          <ul>
+              <b><li>Men dress</li></b>
+              <li>Business Casual</li>
+              <li>Casual Attire</li>
+              <li>Ultra Casual</li>
+              <li>Jeans</li>
+          </ul>
+      </div>
+      <div>
+          <ul>
+              <b><li>Women dress</li></b>
+              <li>Midi dress</li>
+              <li>Off the Shoulder</li>
+              <li>Shift dress</li>
+              <li>A-line dress</li>
+          </ul>
+
+      </div>
+      <div>
+          <p>Subcripe</p>
+          <input type="text" placeholder="  Enter the mail address" style="width: 200px; height: 30px;margin-right: 10px;"><input type="submit" value="Subcripe" style="width: 80px;height: 30px;color: rgb(255, 255, 255);background-color: rgb(169, 154, 182);border-radius: 50%;cursor: pointer;">
+      </div>
+  </div>
+</div>
+<div class="copf">
+ <b><center><p>&copy; Copy. All copy rights are received</p></center></b>
+</div>
+
+<script>
+  // JavaScript code to handle tab switching
+  const tabs = document.querySelectorAll("header nav ul li a");
+  const contents = document.querySelectorAll(".content1");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", (e) => {
+      e.preventDefault();
+      const target = tab.getAttribute("href").substring(1);
+      contents.forEach((content) => {
+        content.style.display = "none";
+      });
+      document.getElementById(target).style.display = "block";
+
+      // Remove active class from all tabs
+      tabs.forEach((tab) => {
+        tab.classList.remove("active");
+      });
+
+      // Add active class to the clicked tab
+      tab.classList.add("active");
+    });
+  });
+  
+</script>
+</body>
+</html>
